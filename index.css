@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    /* background-color: white; */
+    align-items: center; 
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+#nav-links {
+    position: relative;
+    margin: auto;
+    /* width: 700px; */
+    transform: translateX(-65px);
+}
+
+a {
+    margin-inline: 100px;
+    color: #F1B821;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+.a-active {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+.logo-link {
+    margin: 0px;
+}
+
+#background {
+    background-color: black;
+    margin: auto;
+    width: 700px;
+    overflow: hidden;
+    animation: expandBackground 1s ease 1.5s forwards;
+}
+
+@keyframes expandBackground {
+    0% {
+        width: 700px;
+    }
+    100% {
+        width: 825px;
+        overflow: visible;
+    }
+}
+
+#logo-text {
+    animation: moveLogoText 0.5s ease 1s forwards; 
+}
+
+@keyframes moveLogoText {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+        display: none;
+    }
+}
+
+#logo-img {
+    animation: expandLogoImage 1s ease 1.5s forwards;
+}
+
+@keyframes expandLogoImage {
+    0% {
+        width: 700px;
+        filter: blur(0);
+    }
+    100% {
+        width: 825px;
+        filter: blur(15px);
+    }
+}
+
+#portfolio-images {
+    width: 100vw;
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    animation: showImages 2s ease 2.2s forwards;
+    
+}
+
+@keyframes showImages {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+#column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+
+#column:first-of-type {
+    padding-left: 0;
+    margin-left: 0;
+}
+  
+#column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}

@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    /* background-color: white; */
+    align-items: center; 
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+#nav-links {
+    position: relative;
+    margin: auto;
+    /* width: 700px; */
+    transform: translateX(-65px);
+}
+
+a {
+    margin-inline: 100px;
+    color: #F1B821;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+.a-active {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+#background {
+    background-color: black;
+    margin: auto;
+    width: 825px;
+    overflow: hidden;
+    filter: blur(15px);
+}
+
+#contact-form-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(28px);
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+form {
+    padding-inline: 25px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    color: #F1B821;
+    padding-top: 25px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    padding-left: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px black;
+    border-radius: 25px;
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.button-wrapper {
+    text-align: center;
+    padding: 25px;
+}
+
+button {
+    color: #F1B821;
+    width: 40%;
+    height: 65px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+    display: none;
+}

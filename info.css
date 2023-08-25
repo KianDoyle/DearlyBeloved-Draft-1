@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    /* background-color: white; */
+    align-items: center; 
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+#nav-links {
+    position: relative;
+    margin: auto;
+    /* width: 700px; */
+    transform: translateX(-65px);
+}
+
+a {
+    margin-inline: 100px;
+    color: #F1B821;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+.a-active {
+    text-shadow: 0 0 5px  #FFE6A4;
+    color: #FFF0CA;
+}
+
+#background {
+    background-color: black;
+    margin: auto;
+    width: 825px;
+    overflow: hidden;
+    filter: blur(15px);
+}
+
+#information-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    gap: 10px;
+    
+}
+
+#events-wrapper, #weddings-wrapper, #on-location-wrapper, #second-shooting-wrapper, #disclaimer {
+    backdrop-filter: blur(28px);
+    padding: 10px;
+    padding-top: 0px;
+    color: #F1B821;
+}
+
+#events-wrapper>h1 {
+    font-size: 45px;
+}
+
+#weddings-wrapper>h1 {
+    font-size: 55px;
+}
+
+#on-location-wrapper>h1 {
+    font-size: 17px;
+}
+
+#second-shooting-wrapper>h1 {
+    font-size: 25px;
+}
+
+#weddings-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 9;
+
+    border-radius: 30px 10px 10px 10px;
+}
+
+#disclaimer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    padding-block: 22px;
+
+    border-radius: 10px 10px 10px 30px;
+}
+
+#events-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    border-radius: 10px 30px 10px 10px;
+}
+
+#on-location-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+
+    border-radius: 10px 10px 10px 10px;
+}
+
+#second-shooting-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+
+    border-radius: 10px 10px 30px 10px;
+}
+
