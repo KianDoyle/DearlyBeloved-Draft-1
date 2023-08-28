@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dearly Beloved</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div id="nav">
+        <img id="logo" src="Images/logo - circle only.svg" alt="logo" width="100px" height="100px">
+        <div id="nav-links">
+            <a href="index.html">PORTFOLIO</a>
+            <a href="info.html">INFO</a>
+            <a href="contact.html">CONTACT</a>
+            <a class = "a-active" href="book.html">BOOK</a>
+        </div>
+    </div>
+    <div id="background">
+        <img id="logo-img" src="Images/logo - circle only.svg" width="825px">
+    </div>
+
+    <div id="checkfront-widget-wrapper">
+        <script type="text/javascript" src="//dearly-beloved-photography.checkfront.com/lib/interface--0.js"></script>
+        <!-- CHECKFRONT BOOKING PLUGIN v25-->
+        <div id="CHECKFRONT_WIDGET_01">
+            <p id="CHECKFRONT_LOADER"
+                style="background: url('//dearly-beloved-photography.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">
+                Searching Availability...</p>
+        </div>
+        <script>
+            new DROPLET.Widget({
+                host: 'dearly-beloved-photography.checkfront.com',
+                target: 'CHECKFRONT_WIDGET_01',
+                options: 'tabs',
+                provider: 'droplet'
+            }).render();
+        </script>
+        <noscript><a href="https://dearly-beloved-photography.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
+    </div>
+
+</body>
+</html>
