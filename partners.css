@@ -63,67 +63,6 @@ a:hover {
     filter: blur(15px);
 }
 
-#contact-form-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    box-shadow: 0px 0px 20px black;
-    backdrop-filter: blur(28px);
-    border-radius: 25px;
-    margin-top: 25px;
-}
-
-form {
-    padding-inline: 25px;
-}
-
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-label {
-    color: #F1B821;
-    padding-top: 25px;
-}
-
-input, textarea, button {
-    padding: 10px;
-    padding-left: 15px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: solid 1px black;
-    border-radius: 25px;
-    height: 40px;
-}
-
-textarea {
-    height: 150px;
-}
-
-.button-wrapper {
-    text-align: center;
-    padding: 25px;
-}
-
-button {
-    color: #F1B821;
-    width: 40%;
-    height: 65px;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-p {
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
     #nav {
         height: 100px;
@@ -158,10 +97,5 @@ p {
     #logo-img {
         margin-top: 10px;
         width: 100%;
-    }
-    #contact-form-wrapper {
-        top: 125px;
-        transform: translate(-50%, 0);
-        width: 90%;
     }
 }
