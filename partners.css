@@ -63,6 +63,36 @@ a:hover {
     filter: blur(15px);
 }
 
+#chef-shorney {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#chef-shorney img {
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+#chef-shorney:hover img {
+    transform: scale(1.1);
+}
+
+p {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    color: #F1B821;
+    backdrop-filter: blur(25px);
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    transform: translate(-50%);
+    font-size: larger; 
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     #nav {
         height: 100px;
