@@ -33,7 +33,7 @@ submit.addEventListener("click", function(event) {
 
     const body = 'Hi, %0D%0A%0D%0A' + details + '%0D%0A%0D%0APhone number: ' + phone + '%0D%0A%0D%0AName: ' + name; 
 
-    var mailtoUrl = 'mailto:' + encodeURIComponent('email@email.com') +
+    var mailtoUrl = 'mailto:' + encodeURIComponent('itsyourphotographer@dearlybelovedphotography.co.uk') +
                     '?subject=Enquiry' +
                     '&body=' + body;
     
