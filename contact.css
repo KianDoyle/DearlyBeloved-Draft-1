@@ -8,9 +8,23 @@ body {
     overflow-y: auto;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 15px;
 }
+
+::-webkit-scrollbar-track {
+    background-color: #757575;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #313131;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111111;
+}
+
 
 #nav {
     height: 120px;
@@ -24,19 +38,19 @@ body::-webkit-scrollbar {
 }
 
 #nav-links {
-    position: absolute;
     text-align: center;
     width: 100%;
+
 }
 
-@media only screen and (max-width: 800px) {
-    #nav-links {
-        padding-left: 35px;
-    }   
+#padding-div {
+    min-width: 100px;
+    min-height: 100px;
+    padding-right: 10px;
 }
 
 a {
-    padding-inline: 0.5%;
+    padding-inline: 5px;
     color: #F1B821;
     text-decoration: none;
 }
@@ -49,10 +63,6 @@ a:hover {
 .a-active {
     text-shadow: 0 0 5px  #FFE6A4;
     color: #FFF0CA;
-}
-
-.logo-link {
-    margin: 0px;
 }
 
 #background {
@@ -124,30 +134,23 @@ p {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-link img {
+        flex: 1;
         height: 100px;
     }
-    .logo-link {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        /* pointer-events: none; */
-    }
     #nav-links {
-        width: 100vw;
-        position: absolute;
-        text-align: center;
-        top: 115px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-bottom: 0;
-        margin-bottom: 0;
+        flex: 1;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
     a {
         font-size: x-small;
-        margin-right: 5%;
         color: #F1B821;
     }
     #background {
@@ -162,6 +165,22 @@ p {
     #contact-form-wrapper {
         top: 125px;
         transform: translate(-50%, 0);
-        width: 90%;
+        width: 80%;
+    }
+    input, textarea, button {
+        padding: 10px;
+        padding-left: 15px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: solid 1px black;
+        border-radius: 15px;
+        height: 15px;
+    }
+    textarea {
+        height: 50px;
+    }
+    button {
+        height: fit-content;
+
     }
 }
