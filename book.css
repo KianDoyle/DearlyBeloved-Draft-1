@@ -46,7 +46,19 @@ body {
 #padding-div {
     min-width: 100px;
     min-height: 100px;
-    padding-right: 10px;
+    margin-right: 10px;
+}
+ 
+#instagram-link {
+    position: relative;
+    left: 25px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+#instagram-link img {
+    position: relative;
+    top: 30px;
 }
 
 a {
@@ -100,6 +112,20 @@ a:hover {
         font-size: x-small;
         color: #F1B821;
     }
+
+    #padding-div {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+     
+    #instagram-link {
+        left: 50px;
+    }
+    #instagram-link img {
+        top: 15px;
+    }
+
     #background {
         margin-top: 50px;
         width: 90%;
