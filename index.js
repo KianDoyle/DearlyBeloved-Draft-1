@@ -3,21 +3,8 @@ const background = document.querySelector("#background");
 const logoImg = document.querySelector("#logo-img");
 const polaroid = document.querySelector("#polaroid-wrapper");
 
-
-
-
-
-// const anim3mob = gsap.timeline();
-// anim3mob.to(logoImg, {
-//     filter: "blur(15px)",
-//     duration: 1, 
-//     delay: 1.5,
-//     ease: "power2.inout",
-// });
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
+    document.body.style.visibility = 'visible';
     const polaroidWrapper = document.getElementById('polaroid-wrapper');
     const removeButton = document.getElementById('remove-welcome-blurb');
     const imageWrapper = document.getElementById('portfolio-images');
@@ -79,3 +66,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
