@@ -175,6 +175,12 @@ a:hover {
         width: 100%;
     }
     
-    
+    #headshot-wrapper {
+        width: 100%;
+    }
+    #headshot-wrapper img {
+        width: 100%;
+    }
+
 
 }
