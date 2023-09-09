@@ -79,51 +79,15 @@ a:hover {
     margin: auto;
     width: 700px;
     overflow: hidden;
-    /* animation: expandBackground 1s ease 1.5s forwards; */
-}
-
-@keyframes expandBackground {
-    0% {
-        width: 700px;
-    }
-    100% {
-        width: 825px;
-        overflow: visible;
-    }
 }
 
 #logo-text {
     opacity: 1;
-    /* animation: moveLogoText 0.5s ease 1s forwards;  */
-}
-
-@keyframes moveLogoText {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(100%);
-        display: none;
-    }
 }
 
 #logo-img {
     width: 700px;
     filter: blur(0);
-    /* animation: expandLogoImage 1s ease 1.5s forwards; */
-}
-
-@keyframes expandLogoImage {
-    0% {
-        width: 700px;
-        filter: blur(0);
-    }
-    100% {
-        width: 825px;
-        filter: blur(15px);
-    }
 }
 
 #portfolio-images {
@@ -168,7 +132,6 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 5px 25px black;
-    /* animation: moveInfoUp 1.1s ease 2.2s forwards; */
     transition: transform 1s ease;
 }
 
@@ -186,18 +149,6 @@ a:hover {
     border-radius: 25px;
     padding: 15px;
     padding-top: 1px;
-}
-
-@keyframes moveInfoUp {
-    0% {
-        top: 4000px;
-    }
-    80% {
-        top: 90px;
-    }
-    100% {
-        top: 100px;
-    }
 }
 
 #remove-welcome-blurb {
