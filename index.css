@@ -47,18 +47,15 @@ body {
     min-width: 100px;
     min-height: 100px;
     margin-right: 10px;
+    display: flex;
 }
  
 #instagram-link {
-    position: relative;
-    left: 25px;
-    min-width: 100px;
-    min-height: 100px;
-    text-align: center;
+    padding-top: 25%;
 }
-#instagram-link img {
-    position: relative;
-    top: 30px;
+
+#facebook-link {
+    padding-top: 25%;
 }
 
 a {
@@ -244,13 +241,6 @@ a:hover {
         position: absolute;
         top: 0px;
         right: 0px;
-    }
-     
-    #instagram-link {
-        left: 50px;
-    }
-    #instagram-link img {
-        top: 15px;
     }
 
     #background {
