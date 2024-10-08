@@ -126,7 +126,7 @@ a:hover {
     aspect-ratio: 3.4 / 4.2;
     background-color: #f0ead5;
     background-image: url(Images/polaroid-background.jpg);
-    width: 450px;
+    width: 600px;
     position: absolute;
     top: 4000px;
     left: 50%;
@@ -144,7 +144,7 @@ a:hover {
 
 #welcome-blurb {
     color: #F1B821;
-    font-size: xx-large;
+    font-size: 21px;
     text-align: center;
     border-radius: 25px;
     padding: 15px;
